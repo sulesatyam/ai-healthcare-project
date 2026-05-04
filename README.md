@@ -22,24 +22,6 @@ An intelligent AI-powered doctor assistant that can:
 
 ---
 
-## Project Structure
-
-```
-AI-DOCTOR/
-│
-├── gradio_app.py              # Main app (UI + pipeline)
-├── brain_of_the_doctor.py     # Image + AI reasoning
-├── voice_of_the_patient.py    # Audio recording + transcription
-├── voice_of_the_doctor.py     # Text-to-speech output
-├── test_groq.py               # Groq API test
-├── Pipfile
-├── Pipfile.lock
-├── .env                       # API keys
-├── .gitignore
-```
-
----
-
 ## Installation
 
 ### 1. Clone the repository
@@ -155,14 +137,6 @@ python tes_groq.py
 
 ---
 
-## Limitations
-
-* Not a real doctor (for educational/demo use only)
-* Requires internet for API calls
-* Accuracy depends on model output
-
----
-
 ## Future Improvements
 
 * Add patient history memory (RAG)
@@ -175,7 +149,10 @@ python tes_groq.py
 ## Author
 
 Satyam Sule
+
 B.Tech Data Science & Bioinformatics
+
 Email: sulesatyam68@gmail.com
+
 LinkedIn: www.linkedin.com/in/satyamsule
 
