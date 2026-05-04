@@ -1,7 +1,3 @@
-Here’s your cleaned version of the README with all stickers/emojis removed and a more formal tone:
-
----
-
 # AI Doctor (Voice + Vision)
 
 An intelligent AI-powered doctor assistant that can:
@@ -178,11 +174,8 @@ python tes_groq.py
 
 ## Author
 
-Satyam
+Satyam Sule
 B.Tech Data Science & Bioinformatics
+Email: sulesatyam68@gmail.com
+LinkedIn: www.linkedin.com/in/satyamsule
 
----
-
-## If you like this project
-
-Give it a star on GitHub.
