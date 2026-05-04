@@ -1,0 +1,188 @@
+Here’s your cleaned version of the README with all stickers/emojis removed and a more formal tone:
+
+---
+
+# AI Doctor (Voice + Vision)
+
+An intelligent AI-powered doctor assistant that can:
+
+* Listen to patient voice (speech input)
+* Understand symptoms using AI
+* Analyze medical images
+* Respond with realistic doctor voice
+
+---
+
+## Features
+
+* **Speech-to-Text (STT)** using Groq Whisper
+* **AI Diagnosis** using LLM (LLaMA model)
+* **Image Analysis** (medical image understanding)
+* **Text-to-Speech (TTS)** using:
+
+  * ElevenLabs (primary)
+  * gTTS (fallback)
+* **Gradio Web Interface**
+
+---
+
+## Project Structure
+
+```
+AI-DOCTOR/
+│
+├── gradio_app.py              # Main app (UI + pipeline)
+├── brain_of_the_doctor.py     # Image + AI reasoning
+├── voice_of_the_patient.py    # Audio recording + transcription
+├── voice_of_the_doctor.py     # Text-to-speech output
+├── test_groq.py               # Groq API test
+├── Pipfile
+├── Pipfile.lock
+├── .env                       # API keys
+├── .gitignore
+```
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd AI-DOCTOR
+```
+
+### 2. Install dependencies (Pipenv)
+
+```bash
+pipenv install
+pipenv shell
+```
+
+OR using pip:
+
+```bash
+pip install groq speechrecognition pydub gradio python-dotenv gtts elevenlabs
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file:
+
+```
+GROQ_API_KEY=your_groq_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+```
+
+---
+
+## Run the Application
+
+```bash
+python gradio_app.py
+```
+
+Then open:
+
+```
+http://127.0.0.1:7860
+```
+
+---
+
+## How It Works
+
+### Step 1: Voice Input
+
+* User speaks through microphone
+* Audio recorded using `speech_recognition`
+
+### Step 2: Transcription
+
+* Audio converted to text using Groq Whisper model
+
+### Step 3: AI Processing
+
+* Text and image sent to LLM (LLaMA)
+* Model generates medical response
+
+### Step 4: Voice Output
+
+* Response converted to speech using ElevenLabs or gTTS
+
+---
+
+## Tech Stack
+
+* Python 3.11
+* Gradio (UI)
+* Groq API (LLM + Whisper)
+* SpeechRecognition
+* Pydub
+* ElevenLabs API
+* gTTS
+
+---
+
+## Requirements
+
+### Audio Dependencies
+
+* Install **ffmpeg**
+* Install **portaudio**
+
+For Windows:
+
+```bash
+pip install pipwin
+pipwin install pyaudio
+```
+
+---
+
+## Test Scripts
+
+### Test Groq
+
+```bash
+python test_groq.py
+```
+
+### Test Gradio
+
+```bash
+python tes_groq.py
+```
+
+---
+
+## Limitations
+
+* Not a real doctor (for educational/demo use only)
+* Requires internet for API calls
+* Accuracy depends on model output
+
+---
+
+## Future Improvements
+
+* Add patient history memory (RAG)
+* Improve UI/UX
+* Add multilingual support
+* Deploy on cloud (Streamlit / HuggingFace Spaces)
+
+---
+
+## Author
+
+Satyam
+B.Tech Data Science & Bioinformatics
+
+---
+
+## If you like this project
+
+Give it a star on GitHub.
