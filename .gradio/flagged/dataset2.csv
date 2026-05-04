@@ -1,0 +1,4 @@
+audio_filepath,image_filepath,Patient Speech,Doctor Response,output 2,timestamp
+.gradio\flagged\audio_filepath\1746f65d0e3f7effe126\audio.wav,.gradio\flagged\image_filepath\8dd1b3f2cef647c6edac\redness.jpg,,,,2026-05-04 14:53:46.690164
+.gradio\flagged\audio_filepath\7b27693188ac6b3d599c\audio.wav,.gradio\flagged\image_filepath\e66a889bf104832cd30d\redness.jpg,,,,2026-05-04 14:58:14.178214
+.gradio\flagged\audio_filepath\69528ea1355b9aea393c\audio.wav,.gradio\flagged\image_filepath\cacf9c4be50878b54c49\redness.jpg,,,,2026-05-04 15:37:54.658994
